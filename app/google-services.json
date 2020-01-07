@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "884238775756-47q332jgsean1drm5jojq2s22r7jloc3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.socha.pmbapps",
+            "certificate_hash": "412f7023f24f637765a1e1d0d9a52032d19668b8"
+          }
+        },
+        {
           "client_id": "884238775756-qfuub19bdpppi22l975ijkgjngr7026v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

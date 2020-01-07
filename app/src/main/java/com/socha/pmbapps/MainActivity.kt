@@ -11,6 +11,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.api.GoogleApiClient
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedList
         firebaseAuth!!.signInWithCredential(credential!!)
             .addOnSuccessListener { authResult ->
                 val logged_email = authResult.user.email
-                val loggedActivity = Intent(this@MainActivity, LoggedActivity::class.java)
+                val loggedActivity = Intent(this@MainActivity, Home::class.java)
                 loggedActivity.putExtra("email",logged_email)
                 startActivity(loggedActivity)
             }
@@ -74,6 +75,7 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedList
         btn_sign_in.setOnClickListener{
             sign_in()
         }
+
     }
 
     private fun sign_in() {
@@ -93,4 +95,5 @@ class MainActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedList
         mGoogleApiClient.connect()
 
     }
+
 }

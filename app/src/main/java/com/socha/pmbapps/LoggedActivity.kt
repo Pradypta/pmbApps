@@ -17,15 +17,10 @@ import kotlinx.android.synthetic.main.activity_logged.*
 
 class LoggedActivity : AppCompatActivity() {
 
-    lateinit var dotsLayout:LinearLayout
-    lateinit var mPager :ViewPager
-    var path :IntArray = intArrayOf(R.drawable.bg_custom1, R.drawable.bg_custom2, R.drawable.bg_custom3 )
-    lateinit var dots : Array<ImageView>
-    var adapter :PageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_logged)
-        mPager = findViewById(R.id.pager) as ViewPager
  }
 
     }

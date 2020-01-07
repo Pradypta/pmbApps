@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.socha.pmbapps.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_biaya"
+        android:name="com.socha.pmbapps.ui.biaya.BiayaFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_biaya" />
+
+    <fragment
+        android:id="@+id/nav_pendaftaran"
+        android:name="com.socha.pmbapps.ui.pendaftaran.PendaftaranFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_pendaftaran" />
+
+    <fragment
+        android:id="@+id/nav_beasiswa"
+        android:name="com.socha.pmbapps.ui.beasiswa.BeasiswaFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_beasiswa" />
+
+    <fragment
+        android:id="@+id/nav_kontak"
+        android:name="com.socha.pmbapps.ui.contact.ContactFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.socha.pmbapps.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+
+</navigation>

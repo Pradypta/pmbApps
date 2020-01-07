@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pendaftaran"
+            android:icon="@drawable/ic_content_paste_black_24dp"
+            android:title="Pendaftaran" />
+        <item
+            android:id="@+id/nav_biaya"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="Biaya" />
+        <item
+            android:id="@+id/nav_beasiswa"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="Beasiswa" />
+        <item
+            android:id="@+id/nav_prodi"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Prodi" />
+
+    </group>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/nav_kontak"
+                android:icon="@drawable/ic_contacts_black_24dp"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>
